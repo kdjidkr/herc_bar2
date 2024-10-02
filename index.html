@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" /> 
+    <title>메뉴 주문서</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>메뉴 주문서</h1>
+        <form id="orderForm">
+            <table id="menuTable">
+                <thead>
+                    <tr>
+                        <th>메뉴</th>
+                        <th>가격(₩)</th>
+                        <th>수량</th>
+                        <th>삭제</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 기본 메뉴 항목이 여기에 추가됩니다 -->
+                </tbody>
+            </table>
+
+            <div class="total">
+                <h2>결제 금액: <span id="totalAmount">0</span>원</h2>
+                <h2>카카오뱅크 3333-09-5339685 (유동현)</h2>
+            </div>
+
+            <div class="add-menu">
+                <h2>메뉴 추가</h2>
+                <input type="text" id="menuName" placeholder="메뉴 이름" />
+                <input type="number" id="menuPrice" placeholder="가격" min="0" />
+                <button type="button" onclick="addMenuItem()">메뉴 추가</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
